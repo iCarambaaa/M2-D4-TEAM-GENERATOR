@@ -18,27 +18,29 @@
 
     <hr><br>
 
-    <!-- ---MEMBERS--- -->
+    <!-- ---MEMBERS INPUT--- -->
 
     <div class="container mb-5">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Insert name here" aria-label="name"
-                aria-describedby="button-add-to-list">
+                aria-describedby="button-add-to-list" id="person">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-add-to-list">Add to waiting
+                <button onclick="addToList()" class="btn btn-outline-secondary" id="button-add-to-list">Add
+                    to waiting
                     list</button>
             </div>
         </div>
     </div>
 
-    <!-- ---TEAMS--- -->
+    <!-- ---TEAMS# INPUT--- -->
 
     <div class="container mb-5">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="number of teams to generate" aria-label="teams"
-                aria-describedby="create-list">
+                aria-describedby="create-list" id="teams">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-create-teams">Create teams</button>
+                <button onclick="createTeams()" class="btn btn-outline-secondary" id="button-create-teams">Create
+                    teams</button>
             </div>
         </div>
     </div>
@@ -51,17 +53,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-9">
-                <ul>
-                    <li>#1</li>
-                    <li>#1</li>
-                    <li>#1</li>
-                    <li>#1</li>
-                    <li>#1</li>
-                    <li>#1</li>
+                <ul id="list">
+                    <li>placeholder#1</li>
+                    <li>placeholder#2</li>
+
                 </ul>
             </div>
             <div class="col-12 col-sm-3">
-                <button class="btn btn-outline-secondary" type="button" id="assign">Assign to random team</button>
+                <button class="btn btn-outline-secondary" type="button" id="assign">Assign random to team</button>
             </div>
         </div>
 
@@ -69,11 +68,22 @@
 
     <hr><br>
 
+    <!-- ---RESET APP--- -->
+
+    <div>
+        <button onClick="window.location.reload();" class="btn btn-outline-secondary"
+            style="vertical-align: middle;">Reset
+            app</button>
+    </div>
+
+    <hr><br>
+
+
     <!-- ---GRID FOR DISPLAYING THE TEAMS--- -->
 
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row" id="teamsrow">
+            <div class="col teamcol">
 
             </div>
         </div>
@@ -99,6 +109,8 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
+
+    <script src="script.js"></script>
 
 </body>
 
