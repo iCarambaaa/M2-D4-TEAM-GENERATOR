@@ -16,7 +16,16 @@
 <body>
     <h1 style="text-align: center;">TEAM GENERATOR</h1>
 
-    <hr><br>
+  <br>
+
+        <!-- ---RESET APP--- -->
+
+        <div class="row d-flex justify-content-center">
+            <button onClick="window.location.reload();" class="btn btn-outline-secondary">Reset
+                app</button>
+        </div>
+    
+        <br><hr><br>
 
     <!-- ---MEMBERS INPUT--- -->
 
@@ -60,24 +69,13 @@
                 </ul>
             </div>
             <div class="col-12 col-sm-3">
-                <button class="btn btn-outline-secondary" type="button" id="assign">Assign random to team</button>
+                <button onclick="assignRandomly()" class="btn btn-outline-secondary" id="assign">Assign random to team</button>
             </div>
         </div>
 
     </div>
 
     <hr><br>
-
-    <!-- ---RESET APP--- -->
-
-    <div>
-        <button onClick="window.location.reload();" class="btn btn-outline-secondary"
-            style="vertical-align: middle;">Reset
-            app</button>
-    </div>
-
-    <hr><br>
-
 
     <!-- ---GRID FOR DISPLAYING THE TEAMS--- -->
 
